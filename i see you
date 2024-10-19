@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <video id="myVideo" controls>
+        <source src="C:\Users\adrig\OneDrive\Documentos\your falt - Copia.mp4" type="C:\Users\adrig\OneDrive\Documentos\your falt - Copia.mp44">
+        Seu navegador não suporta vídeos.
+    </video>
+
+    <script>
+        // Função para fechar a janela ou aba quando o vídeo terminar
+        document.getElementById("myVideo").addEventListener("ended", function() {
+            // Avisa o usuário e tenta fechar a janela
+            alert("O vídeo terminou. A aba será fechada.");
+            window.close();
+        });
+    </script>
+</body>
+</html>
